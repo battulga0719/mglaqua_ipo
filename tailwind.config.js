@@ -1,9 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  important: true,
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     fontFamily: {
       sans: ['Roboto'],
+    },
+    container: {
+      center: true
     },
     extend: {},
   },
